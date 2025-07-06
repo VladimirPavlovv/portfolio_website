@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vladimir Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fanta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="https://www.linkedin.com/in/vladimir-pavlov-0126b7368/">Vladimir P.</a>
+        <nav>
+            <a target="_blank" href="https://github.com/VladimirPavlovv"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/vladimir-pavlov-0126b7368/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Vladimir...</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                Aspiring software developer with a passion for learning and building real-world projects.
+                Currently focused on improving my skills in programming and software development.
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:v.pavlovv006@gmail.com">
+                    Email me
+                </a>
+                <a target="_blank" href="https://github.com/VladimirPavlovv"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/vladimir-pavlov-0126b7368/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Click to Customize</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Choose a color:</h4>
+                <p style="display: none;">Well... Not the best design I've seen.</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff">
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web</td>
+                        <td>HTML | CSS | JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Programming</td>
+                        <td>Python | C#</td>
+                    </tr>
+                    <tr>
+                        <td>Databases</td>
+                        <td>SQL | SSMS | Entity Framework</td>
+                    </tr>
+                    <tr>
+                        <td>Cybersecurity</td>
+                        <td>Network protocols (TCP/IP, HTTP, HTTPS) | Basic security concepts | Kali Linux</td>
+                    </tr>
+                    <tr>
+                        <td>Tools</td>
+                        <td>Git | GitHub | MS Office</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>21 June, 2025</p>
+                        <h4>Brogram</h4>
+                        <div class="tech-list">
+                             <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <p>Simple 30 Workouts Training Plan</p>
+                        <div class="project-links">
+                            <a href="https://brogram-web.netlify.app/">Live</a>
+                            <a href="https://github.com/VladimirPavlovv/brogram">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="img/brogram.png" alt="brogram-thumbnail">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>7 July, 2025</p>
+                        <h4>Dev Store</h4>
+                        <div class="tech-list">
+                             <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Stripe</p>
+                            </div>
+                        </div>
+                        <p>Super cool store for software developers!</p>
+                        <div class="project-links">
+                            <a href="https://main.d1or94pemftqtm.amplifyapp.com/">Live</a>
+                            <a target="_blank" href="https://github.com/VladimirPavlovv/devstore">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="img/devstore.png" alt="vladimir-thumbnail">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>XX XX, 2025</p>
+                        <h4>Expenny | The Subscription Tracker</h4>
+                        <div class="tech-list">
+                             <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Firebase</p>
+                            </div>
+                        </div>
+                        <p>Track all your subscription analytics!</p>
+                        <div class="project-links">
+                            <a target="_blank" href="">Live</a>
+                            <a target="_blank" href="">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="img/fantacss.png" alt="vladimir-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a target="_blank" href="https://www.linkedin.com/in/vladimir-pavlov-0126b7368/">Vladimir Pavlov</a> see the repo on <a target="_blank" href="https://github.com/VladimirPavlovv">GitHub</a></p>
+    </footer>
+    <script>
+        const body = document.querySelector('body')
+        const colorDiv = document.querySelector('.color-div')
+        const colorInput = document.getElementById('color-picker')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        function playGame(){
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor(){
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor(){
+            body.style.background = 'black'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+
+            resetBtn.style.display = 'none'
+            hiddenText.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
